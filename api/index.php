@@ -1,7 +1,7 @@
 <?php
 // Allow CORS
 header("Access-Control-Allow-Origin: *");
-header("Content-Type: application/vnd.apple.mpegurl");
+header("Content-Type: application/x-mpegURL"); // Correct MIME type for M3U8
 
 // Get the stream URL from the query string
 $url = isset($_GET['url']) ? $_GET['url'] : '';
